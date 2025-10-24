@@ -1,0 +1,95 @@
+:root{
+    --bg:#ffffff;
+    --display-top:#a9a9a9;
+    --display-bottom:#6b6b6b;
+    --purple:#e8b6ff;
+    --orange:#ff9a52;
+    --green:#7be37a;
+    --red:#ff6b6b;
+    --blue:#57b6ff;
+    --edge-shadow: rgba(0,0,0,0.14);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  body{
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    background-color: white;
+  }
+
+  .calc {
+    width:360px;
+    border-radius:22px;
+    padding:18px;
+    background:linear-gradient(180deg,#ffe88a,#fcdc6f);
+    box-shadow: 0 10px 0 rgba(0,0,0,0.05), 0 6px 18px rgba(0,0,0,0.12) inset;
+    border:6px solid rgba(0,0,0,0.06);
+  }
+
+  .display{
+    height:80px;
+    border-radius:16px;
+    background:linear-gradient(180deg,var(--display-top),var(--display-bottom));
+    box-shadow:inset 0 8px 12px rgba(0,0,0,0.25);
+    color:#222;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    font-size:28px;
+    font-weight:bold;
+    padding:0 20px;
+    margin-bottom:14px;
+    position:relative;
+  }
+
+  .display::after{
+    content:'';
+    position:absolute;
+    top:10px;left:0;right:0;height:20px;
+    background:linear-gradient(90deg,rgba(255,255,255,0.4),rgba(255,255,255,0));
+    pointer-events:none;
+  }
+
+  .top-pills{
+    display:flex;
+    gap:10px;
+    margin-bottom:10px;
+  }
+  .top-pills .btn{
+    flex:1;
+    border-radius:14px;
+    height:44px;
+    font-size:16px;
+  }
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:10px;
+    justify-items:center;
+  }
+
+  .btn{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    border:none;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 4px 0 var(--edge-shadow);
+    transition:transform 0.1s, box-shadow 0.1s;
+  }
+  .btn:active{
+    transform:translateY(4px);
+    box-shadow:none;
+  }
+
+  .purple{background:var(--purple);}
+  .orange{background:var(--orange);}
+  .green{background:var(--green);}
+  .red{background:var(--red);}
+  .blue{background:var(--blue);}
