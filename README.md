@@ -1,14 +1,14 @@
 # Basit Hesap Makinesi (2023)
 
-Bu proje, **HTML**, **CSS** ve **JavaScript** kullanılarak geliştirilmiş basit bir **hesap makinesi uygulamasıdır**.  
-Renkli ve modern arayüzüyle kullanıcıların temel matematiksel işlemleri kolaylıkla yapmasını sağlar.  
+> Bu proje, **HTML**, **CSS** ve **JavaScript** kullanılarak geliştirilmiş basit bir **hesap makinesi uygulamasıdır**.
+> 2023 yılında yapılmış kişisel bir uygulama geliştirme çalışmasıdır.
+- Amaç, temel hesaplama mantığını renkli ve düzenli bir arayüzle birleştirmektir.
 
 ---
 
-## 📸 Ekran Görüntüsü
-> Görseller `calculator/` klasörü içindedir.  
-> Örneğin:  
-> ![Ekran Görüntüsü](screenshot.png)
+## 📸 Ekran Görüntüsü 
+> Genel görünüm:  
+> ![Ekran Görüntüsü](calculator.jpg)
 
 ---
 
@@ -36,4 +36,8 @@ calculator/
 ├── calculator.js # Hesaplama mantığı ve buton işlevleri
 
 └── screenshot.png # (isteğe bağlı) Ekran görüntüsü
+
+---
+
+*Bu proje ticari olmayan, öğrenme amaçlı eski bir çalışmadır.*
 
